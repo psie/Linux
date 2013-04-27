@@ -1,5 +1,7 @@
 #!/usr/bin/ruby
 # format string exploit for vuln.bin
+# evades ALSR by first reading address from stack
+# and then calculating the distance to saved ret
 
 require 'socket'
 require 'metasm'
